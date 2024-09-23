@@ -1,6 +1,6 @@
 # SES Tool
 
-Smart uses the SES service to send automated emails from the Keystone application.  Occasionally, support will need the SES suppression list reviewed for addresses that have been blocked, to have them unblocked, or otherwise manage the suppression list.
+This tool allows for interacting with the SES suppression list, to review addresses that have been blocked, unblock specific addresses, or clear the whole list.
 
 This tool is a slightly easier way to do the tasks, rather than directly using the `awscli` directly or via bash scripts.
 
