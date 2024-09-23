@@ -15,6 +15,14 @@ This tool is a slightly easier way to do the tasks, rather than directly using t
 
 If your AWS config uses materially different naming conventions, just pass those in as the `ACCOUNT` but be sure to set `REGION` as well.
 
+## Setup
+
+```
+python3.11 -m venv .
+. bin/activate
+pip install -r requirements.txt
+```
+
 ## Functions
 
 Basic usage:
@@ -50,8 +58,7 @@ actions:
 
 ### Accounts
 
-the `-a` `--account` expects a _profile_ name from your `~/.aws/config`, We have SES in use for SPMT (`smartprod`), NIAC (`niacprod`), and Zurich (`zurichprod`); if you have those profiles specifically configured in your aws config file, the tool only needs `-a`, if you've configured your profiles differently, you'll need to pass in both account profile name, _and_ SES regions.
-(Without either option set, the tool will default to `smartprod` and `eu-west-1` (ireland) & `eu-west-2` (london))
+the `-a` `--account` expects a _profile_ name from your `~/.aws/config`, if you have not added your profiles to the script, you'll need to pass in both account profile name, _and_ SES regions.
 
 ### Email or Domain
 
